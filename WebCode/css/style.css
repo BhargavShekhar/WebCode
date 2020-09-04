@@ -1,0 +1,134 @@
+/* CSS Reset */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* CSS Variable */
+:root{
+    --navbar-height: 59px;
+}
+
+/* Navigation Bar */
+
+#navbar{
+    display: flex;
+    align-items: center;
+}
+
+/* Navigation Bar: Logo and Image */
+#logo{
+    margin; 10px 38px;
+}
+
+#logo img{
+    height: 40px;
+    margin; 3px 6px;
+}
+
+/* Navigation Bar: List Styling */
+#navbar{
+    position: relative; /* at the end */
+}
+
+#navbar ul{
+    display: flex;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5
+}
+
+#navbar ul li{
+    /* color: white; /* hold it then delete it*/
+    list-style: none;
+    font-size: 1.1rem;
+}
+
+#navbar ul li a{
+    color: White; /* at last */
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: White;
+}
+
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 560px;  /* 200 */
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{
+    content: "";
+    background: url("../images/bg.jpg") no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.87
+
+}
+
+#home h1{
+    color: Black;
+    text-align: center;
+}
+
+#home p{
+    color: Black;
+    text-align: center;
+    font-size: 1rem;
+}
+
+/* Utility Class */
+.h-primary{
+    font-size: 2.8rem;
+    padding: 12px;
+}
+
+.h-secondary{
+    font-size: 1.8rem;
+    padding: 12px;
+}
+
+/* Services Center */
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{
+    border: 2px solid brown;
+}
+#services{
+
+}
+
+.btn{
+    padding: 4px 7px;
+    border: 1px solid black;
+    background-color: transparent;
+    color: black;
+    margin: 17px;
+    border-radius: 7px;
+    cursor:pointer;
+}
+
+.center{
+    text-align: center;
+}
